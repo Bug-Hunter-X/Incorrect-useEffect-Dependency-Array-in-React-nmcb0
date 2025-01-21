@@ -1,0 +1,3 @@
+# Incorrect useEffect Dependency Array in React
+
+This repository demonstrates a common error in React's `useEffect` hook: an incomplete dependency array that prevents the effect from running when expected. The example shows a component that attempts to update the document title based on a count value; however, due to the mistake in the dependency array, the title only changes on the initial render and not on subsequent updates. The solution shows the correct implementation with the complete dependency array, ensuring that the effect is triggered every time the `count` value changes.
